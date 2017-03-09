@@ -1,6 +1,6 @@
 {
   "name": "experiment-babylon-js",
-  "version": "2.5",
+  "version": "2.5.0",
   "description": "Bundled version of Babylon-js 2D and 3D for experiment-js",
   "main": "index.js",
   "author": "Albert Buchard",

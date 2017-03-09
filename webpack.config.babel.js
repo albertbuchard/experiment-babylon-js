@@ -14,7 +14,7 @@ const plugins = [
   new webpack.NoEmitOnErrorsPlugin(),
 ]
 const prodPlugins = plugins.concat(new webpack.optimize.UglifyJsPlugin())
-
+// not really working
 export default {
   entry: [
     './index.js',
