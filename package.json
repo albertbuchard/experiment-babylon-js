@@ -8,8 +8,9 @@
   "scripts": {
     "webp": "webpack --progress && PROD_ENV=1 webpack --progress"
   },
-  "dependencies": {
-    "handjs": "^1.3.11"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albertbuchard/experiment-babylon-js.git"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",

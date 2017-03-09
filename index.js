@@ -1,5 +1,3 @@
-import { BABYLON } from './src/babylon.2.5.full.max'
-import { OIMO } from './src/Oimo'
-import { HANDJS } from './src/Hand'
+import { BABYLON, OIMO, HANDJS } from './dist/babylon.max'
 
 export { BABYLON, OIMO, HANDJS }
