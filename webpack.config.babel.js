@@ -9,9 +9,6 @@ const PROD = JSON.parse(process.env.PROD_ENV || '0')
 
 const plugins = [
   new webpack.optimize.OccurrenceOrderPlugin(),
-  new webpack.HotModuleReplacementPlugin(),
-  new webpack.NamedModulesPlugin(),
-  new webpack.NoEmitOnErrorsPlugin(),
 ]
 const prodPlugins = plugins.concat(new webpack.optimize.UglifyJsPlugin())
 // not really working
@@ -23,6 +20,9 @@ export default {
     filename: PROD ? 'babylon.min.js' : 'babylon.max.js',
     path: path.resolve(__dirname, 'dist/'),
     publicPath: `http://localhost:${WDS_PORT}/dist/`,
+    library: 'EBJS',
+    libraryTarget: 'umd', 
+    umdNamedDefine: true,
   },
   module: {
     rules: [

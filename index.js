@@ -1,5 +1,6 @@
-import { BABYLON } from './src/babylon.2.5.full.max'
-import { OIMO } from './src/Oimo'
-import { HANDJS } from './src/Hand'
+const BABYLON = require('./src/babylon.2.5.full.max')
+const OIMO = require('./src/Oimo').OIMO
+// const HANDJS = require('./src/Hand')
 
-export { BABYLON, OIMO, HANDJS }
+
+export { BABYLON, OIMO }

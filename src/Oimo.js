@@ -12510,3 +12510,4 @@ OIMO.World.prototype.add = function (obj) {
     }
 }
 
+export { OIMO }
