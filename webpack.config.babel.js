@@ -21,7 +21,7 @@ export default {
     path: path.resolve(__dirname, 'dist/'),
     publicPath: `http://localhost:${WDS_PORT}/dist/`,
     library: 'EBJS',
-    libraryTarget: 'umd', 
+    libraryTarget: 'umd',
     umdNamedDefine: true,
   },
   module: {

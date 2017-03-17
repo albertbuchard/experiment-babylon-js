@@ -3,4 +3,4 @@ const OIMO = require('./src/Oimo').OIMO
 // const HANDJS = require('./src/Hand')
 
 
-export { BABYLON, OIMO }
+module.exports = { BABYLON, OIMO }
