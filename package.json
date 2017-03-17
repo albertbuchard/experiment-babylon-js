@@ -2,7 +2,7 @@
   "name": "experiment-babylon-js",
   "version": "2.5.7",
   "description": "Bundled version of Babylon-js 2D and 3D for experiment-js",
-  "main": "index.js",
+  "main": "lib/babylon.max.js",
   "author": "Albert Buchard",
   "license": "Apache 2.0",
   "scripts": {
