@@ -1,6 +1,4 @@
-const BABYLON = require('./src/babylon.2.5.full.max')
-const OIMO = require('./src/Oimo').OIMO
-// const HANDJS = require('./src/Hand')
+import {BABYLON, OIMO} from './lib/babylon.max'
 
 
-module.exports = { BABYLON, OIMO }
+export {BABYLON, OIMO}

@@ -1,6 +1,5 @@
-// @flow
 
-import path from 'path'
+import path from 'path' // eslint-disable-line
 import webpack from 'webpack'
 
 const WDS_PORT = 7000
@@ -14,12 +13,12 @@ const prodPlugins = plugins.concat(new webpack.optimize.UglifyJsPlugin())
 // not really working
 export default {
   entry: [
-    './index.js',
+    './builder.js',
   ],
   output: {
     filename: PROD ? 'babylon.min.js' : 'babylon.max.js',
-    path: path.resolve(__dirname, 'dist/'),
-    publicPath: `http://localhost:${WDS_PORT}/dist/`,
+    path: path.resolve(__dirname, 'lib/'),
+    publicPath: `http://localhost:${WDS_PORT}/lib/`,
     library: 'EBJS',
     libraryTarget: 'umd',
     umdNamedDefine: true,

@@ -11,8 +11,12 @@
         "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
         "no-prototype-builtins": 0,
         "max-len": ["error", {"code": 100, "ignoreComments": true}],
+        "max-len": 0,
         "no-extend-native": 0,
         "no-param-reassign": 0,
-        "no-underscore-dangle": 0
+        "no-underscore-dangle": 0,
+        "no-nested-ternary": 0,
+        "no-multi-assign": "error",
+        "global-require": 0
     }
 }
