@@ -1,3 +1,3 @@
-const test = require('./lib/babylon.min.js')
+const test = require('./lib/babylon.max.js')
 
 console.log(test)
