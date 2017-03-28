@@ -1,13 +1,13 @@
 
 // const HANDJS = require('./src/Hand')
 let BABYLON = {}
-let OIMO = {}
+// let OIMO = {}
 
 if (typeof window !== 'undefined') {
-  BABYLON = require('./src/babylon.2.5.full.max')
-  OIMO = require('./src/Oimo').OIMO
+  // BABYLON = require('./src/babylon.2.5.full.max')
+  // OIMO = require('./src/Oimo').OIMO
+  BABYLON = require('./lib/babylon.custom.2.6.js')
   window.BABYLON = BABYLON
-  window.OIMO = OIMO
 }
 
-module.exports = { BABYLON, OIMO }
+module.exports = BABYLON

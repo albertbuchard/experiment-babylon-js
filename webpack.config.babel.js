@@ -2,7 +2,6 @@
 import path from 'path' // eslint-disable-line
 import webpack from 'webpack'
 
-const WDS_PORT = 7000
 
 const PROD = JSON.parse(process.env.PROD_ENV || '0')
 
@@ -10,7 +9,7 @@ const plugins = [
   new webpack.optimize.OccurrenceOrderPlugin(),
 ]
 const prodPlugins = plugins.concat(new webpack.optimize.UglifyJsPlugin())
-// not really working
+
 export default {
   entry: [
     './builder.js',
@@ -18,8 +17,7 @@ export default {
   output: {
     filename: PROD ? 'babylon.min.js' : 'babylon.max.js',
     path: path.resolve(__dirname, 'lib/'),
-    publicPath: `http://localhost:${WDS_PORT}/lib/`,
-    library: 'EBJS',
+    library: 'BABYLON',
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },
@@ -31,10 +29,6 @@ export default {
   devtool: PROD ? false : 'source-map',
   resolve: {
     extensions: ['.js', '.jsx'],
-  },
-  devServer: {
-    port: WDS_PORT,
-    hot: true,
   },
   plugins: PROD ? prodPlugins : plugins,
 }
