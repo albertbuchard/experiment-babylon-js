@@ -6,7 +6,7 @@ let BABYLON = {}
 if (typeof window !== 'undefined') {
   // BABYLON = require('./src/babylon.2.5.full.max')
   // OIMO = require('./src/Oimo').OIMO
-  BABYLON = require('./lib/babylon.custom.2.6.js')
+  BABYLON = require('./lib/babylon.custom.3.0.js')
   window.BABYLON = BABYLON
 }
 
